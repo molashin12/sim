@@ -56,6 +56,23 @@ export default {
           primary: 'hsl(var(--gradient-primary))',
           secondary: 'hsl(var(--gradient-secondary))',
         },
+        brand: {
+          primary: {
+            DEFAULT: 'var(--brand-primary-hex)',
+            hover: 'var(--brand-primary-hover-hex)',
+          },
+          secondary: 'var(--brand-secondary-hex)',
+          accent: {
+            DEFAULT: 'var(--brand-accent-hex)',
+            hover: 'var(--brand-accent-hover-hex)',
+          },
+          background: 'var(--brand-background-hex)',
+          surface: 'var(--brand-surface-hex)',
+          muted: 'var(--brand-muted-hex)',
+          text: {
+            light: 'var(--brand-text-light-hex)',
+          },
+        },
       },
       fontWeight: {
         medium: '460',

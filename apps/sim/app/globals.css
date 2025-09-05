@@ -47,8 +47,8 @@
     --popover-foreground: 0 0% 3.9%;
 
     /* Primary Colors */
-    --primary: 0 0% 11.2%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 216 28% 20%; /* Gunmetal for primary actions */
+    --primary-foreground: 43 59% 52%; /* Gold text on primary */
 
     /* Secondary Colors */
     --secondary: 0 0% 96.1%;
@@ -59,8 +59,8 @@
     --muted-foreground: 0 0% 46.9%;
 
     /* Accent Colors */
-    --accent: 0 0% 92.5%;
-    --accent-foreground: 0 0% 11.2%;
+    --accent: 43 59% 52%; /* Gold accent */
+    --accent-foreground: 216 28% 20%; /* Dark text on gold */
 
     /* Destructive Colors */
     --destructive: 0 84.2% 60.2%;
@@ -92,16 +92,19 @@
     --base-muted-foreground: #737373;
 
     /* Gradient Colors */
-    --gradient-primary: 263 85% 70%; /* More vibrant purple */
-    --gradient-secondary: 336 95% 65%; /* More vibrant pink */
+    --gradient-primary: 43 59% 52%; /* Gold gradient */
+    --gradient-secondary: 216 28% 20%; /* Gunmetal gradient */
 
-    /* Brand Colors (Default Sim Theme) */
-    --brand-primary-hex: #701ffc; /* Primary brand purple */
-    --brand-primary-hover-hex: #802fff; /* Primary brand purple hover */
-    --brand-secondary-hex: #6518e6; /* Secondary brand purple */
-    --brand-accent-hex: #9d54ff; /* Accent purple for links */
-    --brand-accent-hover-hex: #a66fff; /* Accent purple hover */
-    --brand-background-hex: #0c0c0c; /* Primary dark background */
+    /* Brand Colors (New White Label Theme) */
+    --brand-primary-hex: #363636; /* Jet - Primary brand dark gray */
+    --brand-primary-hover-hex: #4a4a4a; /* Jet hover - Lighter gray */
+    --brand-secondary-hex: #242f40; /* Gunmetal - Secondary brand navy */
+    --brand-accent-hex: #cca43b; /* Satin Sheen Gold - Accent gold */
+    --brand-accent-hover-hex: #d4b045; /* Gold hover - Brighter gold */
+    --brand-background-hex: #363636; /* Jet - Primary dark background */
+    --brand-surface-hex: #242f40; /* Gunmetal - Surface background */
+    --brand-muted-hex: #e5e5e5; /* Platinum - Muted elements */
+    --brand-text-light-hex: #ffffff; /* White - Light text */
 
     /* UI Surface Colors */
     --surface-elevated: #202020; /* Elevated surface background for dark mode */
@@ -122,8 +125,8 @@
     --popover-foreground: 0 0% 98%;
 
     /* Primary Colors */
-    --primary: 0 0% 11.2%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 43 59% 52%; /* Gold primary for dark mode */
+    --primary-foreground: 216 28% 20%; /* Dark text on gold */
 
     /* Secondary Colors */
     --secondary: 0 0% 12.0%;
@@ -134,8 +137,8 @@
     --muted-foreground: 0 0% 65.1%;
 
     /* Accent Colors */
-    --accent: 0 0% 17.5%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 216 28% 20%; /* Gunmetal accent for dark mode */
+    --accent-foreground: 43 59% 52%; /* Gold text on gunmetal */
 
     /* Destructive Colors */
     --destructive: 0 62.8% 30.6%;
@@ -163,16 +166,19 @@
     --base-muted-foreground: #a3a3a3;
 
     /* Gradient Colors - Adjusted for dark mode */
-    --gradient-primary: 263 90% 75%; /* More vibrant purple for dark mode */
-    --gradient-secondary: 336 100% 72%; /* More vibrant pink for dark mode */
+    --gradient-primary: 43 59% 55%; /* Brighter gold for dark mode */
+    --gradient-secondary: 216 28% 25%; /* Lighter gunmetal for dark mode */
 
-    /* Brand Colors (Same in dark mode) */
-    --brand-primary-hex: #701ffc; /* Primary brand purple */
-    --brand-primary-hover-hex: #802fff; /* Primary brand purple hover */
-    --brand-secondary-hex: #6518e6; /* Secondary brand purple */
-    --brand-accent-hex: #9d54ff; /* Accent purple for links */
-    --brand-accent-hover-hex: #a66fff; /* Accent purple hover */
-    --brand-background-hex: #0c0c0c; /* Primary dark background */
+    /* Brand Colors (Dark Mode Optimized) */
+    --brand-primary-hex: #363636; /* Jet - Primary brand dark gray */
+    --brand-primary-hover-hex: #4a4a4a; /* Jet hover - Lighter gray */
+    --brand-secondary-hex: #242f40; /* Gunmetal - Secondary brand navy */
+    --brand-accent-hex: #cca43b; /* Satin Sheen Gold - Accent gold */
+    --brand-accent-hover-hex: #d4b045; /* Gold hover - Brighter gold */
+    --brand-background-hex: #242f40; /* Gunmetal - Dark mode background */
+    --brand-surface-hex: #363636; /* Jet - Dark mode surface */
+    --brand-muted-hex: #e5e5e5; /* Platinum - Muted elements */
+    --brand-text-light-hex: #ffffff; /* White - Light text */
 
     /* UI Surface Colors */
     --surface-elevated: #202020; /* Elevated surface background for dark mode */
@@ -383,6 +389,14 @@ input[type="search"]::-ms-clear {
     background-color: var(--brand-background-hex);
   }
 
+  .bg-brand-surface {
+    background-color: var(--brand-surface-hex);
+  }
+
+  .bg-brand-muted {
+    background-color: var(--brand-muted-hex);
+  }
+
   .text-brand-primary {
     color: var(--brand-primary-hex);
   }
@@ -395,8 +409,16 @@ input[type="search"]::-ms-clear {
     color: var(--brand-accent-hover-hex);
   }
 
+  .text-brand-light {
+    color: var(--brand-text-light-hex);
+  }
+
   .border-brand-primary {
     border-color: var(--brand-primary-hex);
+  }
+
+  .border-brand-accent {
+    border-color: var(--brand-accent-hex);
   }
 
   .hover\:bg-brand-primary-hover:hover {

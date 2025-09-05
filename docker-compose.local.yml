@@ -1,4 +1,24 @@
 services:
+  sim-agent-local:
+    build:
+      context: ./apps/sim-agent-local
+      dockerfile: Dockerfile
+    ports:
+      - '8001:8001'
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-dummy_key_for_testing}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-dummy_key_for_testing}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-dummy_key_for_testing}
+      - HOST=0.0.0.0
+      - PORT=8001
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:8001/health']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
   simstudio:
     build:
       context: .

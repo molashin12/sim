@@ -43,7 +43,8 @@ ENV NEXT_TELEMETRY_DISABLED=1 \
     DOCKER_BUILD=1
 
 WORKDIR /app
-RUN bun run build
+# Skip prebuild linting for Docker builds
+RUN bun run turbo build
 
 # ========================================
 # Runner Stage: Run the actual app

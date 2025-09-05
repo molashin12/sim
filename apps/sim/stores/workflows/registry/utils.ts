@@ -1,49 +1,58 @@
-// Available workflow colors
+// Available workflow colors - New Brand Palette
 export const WORKFLOW_COLORS = [
-  // Blues - vibrant blue tones
-  '#3972F6', // Blue (original)
-  '#2E5BF5', // Deeper Blue
-  '#1E4BF4', // Royal Blue
-  '#0D3BF3', // Deep Royal Blue
+  // Brand Primary Colors
+  '#363636', // Jet - Brand primary
+  '#242f40', // Gunmetal - Brand secondary
+  '#cca43b', // Satin Sheen Gold - Brand accent
+  '#e5e5e5', // Platinum - Brand muted
 
-  // Pinks/Magentas - vibrant pink and magenta tones
-  '#F639DD', // Pink/Magenta (original)
-  '#F529CF', // Deep Magenta
-  '#F749E7', // Light Magenta
-  '#F419C1', // Hot Pink
+  // Complementary Warm Tones
+  '#8B4513', // Saddle Brown - Warm complement to gold
+  '#A0522D', // Sienna - Rich brown
+  '#CD853F', // Peru - Golden brown
+  '#DAA520', // Goldenrod - Rich gold variation
 
-  // Oranges/Yellows - vibrant orange and yellow tones
-  '#F6B539', // Orange/Yellow (original)
-  '#F5A529', // Deep Orange
-  '#F49519', // Burnt Orange
-  '#F38509', // Deep Burnt Orange
+  // Cool Tones (Navy/Blue Family)
+  '#1e3a5f', // Dark Navy - Deeper gunmetal
+  '#2c4f73', // Steel Blue - Lighter navy
+  '#34568B', // Royal Blue - Professional blue
+  '#4682B4', // Steel Blue - Lighter professional
 
-  // Purples - vibrant purple tones
-  '#8139F6', // Purple (original)
-  '#7129F5', // Deep Purple
-  '#6119F4', // Royal Purple
-  '#5109F3', // Deep Royal Purple
+  // Earth Tones
+  '#556B2F', // Dark Olive Green - Professional earth
+  '#6B8E23', // Olive Drab - Natural green
+  '#8FBC8F', // Dark Sea Green - Muted green
+  '#9ACD32', // Yellow Green - Vibrant earth
 
-  // Greens - vibrant green tones
-  '#39B54A', // Green (original)
-  '#29A53A', // Deep Green
-  '#19952A', // Forest Green
-  '#09851A', // Deep Forest Green
+  // Sophisticated Grays
+  '#2F4F4F', // Dark Slate Gray - Deep professional
+  '#696969', // Dim Gray - Mid-tone professional
+  '#708090', // Slate Gray - Cool professional
+  '#778899', // Light Slate Gray - Lighter professional
 
-  // Teals/Cyans - vibrant teal and cyan tones
-  '#39B5AB', // Teal (original)
-  '#29A59B', // Deep Teal
-  '#19958B', // Dark Teal
-  '#09857B', // Deep Dark Teal
+  // Accent Colors (Warmer Palette)
+  '#B8860B', // Dark Goldenrod - Rich accent
+  '#CD9B1D', // Goldenrod - Bright accent
+  '#D2691E', // Chocolate - Warm accent
+  '#DC143C', // Crimson - Bold accent
 
-  // Reds/Red-Oranges - vibrant red and red-orange tones
-  '#F66839', // Red/Orange (original)
-  '#F55829', // Deep Red-Orange
-  '#F44819', // Burnt Red
-  '#F33809', // Deep Burnt Red
+  // Deep Rich Colors
+  '#483D8B', // Dark Slate Blue - Deep rich
+  '#4B0082', // Indigo - Deep purple
+  '#800080', // Purple - Classic purple
+  '#8B008B', // Dark Magenta - Bold purple
 
-  // Additional vibrant colors for variety
-  // Corals - warm coral tones
+  // Professional Teals
+  '#2F4F4F', // Dark Slate Gray
+  '#5F8A8B', // Cadet Blue - Professional teal
+  '#4682B4', // Steel Blue - Professional blue
+  '#6495ED', // Cornflower Blue - Lighter professional
+
+  // Additional Professional Colors
+  '#8B4513', // Saddle Brown
+  '#A0522D', // Sienna
+  '#CD853F', // Peru
+  '#D2691E', // Chocolate
   '#F6397A', // Coral
   '#F5296A', // Deep Coral
   '#F7498A', // Light Coral
